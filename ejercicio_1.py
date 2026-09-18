@@ -6,16 +6,21 @@ class Edades:
     def calcular_edadalberto(edadjuan):
         return 2 * edadjuan / 3
 
+
+    #Se calcula la edad de ana
     @staticmethod
     def calcular_edadana(edadjuan):
         return 4 * edadjuan / 3
 
+
+    #Se calcula la edad de mama
     @staticmethod
     def calcular_edadmama(edadjuan, edadalberto, edadana):
         return edadjuan + edadalberto + edadana
 
 
 def main():
+    #se recibe la edad de juan
     print("Ingrese la edad de Juan")
     edadjuan = float(input())
 
@@ -23,6 +28,7 @@ def main():
     edadana = Edades.calcular_edadana(edadjuan)
     edadmama = Edades.calcular_edadmama(edadjuan, edadalberto, edadana)
 
+    #se imprimen las edades
     print(f"Edad de Alberto: {edadalberto}")
     print(f"Edad de Ana: {edadana}")
     print(f"Edad de Juan: {edadjuan}")
