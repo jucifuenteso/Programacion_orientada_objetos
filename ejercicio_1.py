@@ -1,29 +1,32 @@
 class Edades:
+
+
+    #Se calcula la edad de alberto
     @staticmethod
-    def calcular_edalber(edjuan):
-        return 2 * edjuan / 3
+    def calcular_edadalberto(edadjuan):
+        return 2 * edadjuan / 3
 
     @staticmethod
-    def calcular_edana(edjuan):
-        return 4 * edjuan / 3
+    def calcular_edadana(edadjuan):
+        return 4 * edadjuan / 3
 
     @staticmethod
-    def calcular_edmama(edjuan, edalber, edana):
-        return edjuan + edalber + edana
+    def calcular_edadmama(edadjuan, edadalberto, edadana):
+        return edadjuan + edadalberto + edadana
 
 
 def main():
     print("Ingrese la edad de Juan")
-    edjuan = float(input())
+    edadjuan = float(input())
 
-    edalber = Edades.calcular_edalber(edjuan)
-    edana = Edades.calcular_edana(edjuan)
-    edmama = Edades.calcular_edmama(edjuan, edalber, edana)
+    edadalberto = Edades.calcular_edadalberto(edadjuan)
+    edadana = Edades.calcular_edadana(edadjuan)
+    edadmama = Edades.calcular_edadmama(edadjuan, edadalberto, edadana)
 
-    print(f"Edad de Alberto: {edalber}")
-    print(f"Edad de Ana: {edana}")
-    print(f"Edad de Juan: {edjuan}")
-    print(f"Edad de la Mama: {edmama}")
+    print(f"Edad de Alberto: {edadalberto}")
+    print(f"Edad de Ana: {edadana}")
+    print(f"Edad de Juan: {edadjuan}")
+    print(f"Edad de la Mama: {edadmama}")
 
 
 if __name__ == "__main__":
